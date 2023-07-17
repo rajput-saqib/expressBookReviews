@@ -19,11 +19,11 @@ regd_users.post("/login", (req,res) => {
 });
 
 // Add a book review
-regd_users.put("/auth/review/:isbn", (req, res) => {
+regd_users.put("/review/:isbn", (req, res) => {
   return res.status(200).json({message: "The review for the book with ISBN "+req.params.isbn+" is added/update"});
 });
 
-regd_users.delete("/auth/review/:isbn", (req, res) => {
+regd_users.delete("/review/:isbn", (req, res) => {
   return res.status(200).json({message: "The review for the book with ISBN "+req.params.isbn+" is deleted."});
 });
 
